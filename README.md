@@ -1,4 +1,4 @@
-# SnackbarDemo
+# MSnackbar
 A simple android library to show message on the screen.
 ## Screenshot
 <img src="img/6gif.gif" width="30%"> 
