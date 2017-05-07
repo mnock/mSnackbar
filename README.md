@@ -1,5 +1,5 @@
 # MSnackbar
-A simple android library to show message on the screen.This library based on [StarBar](https://github.com/liuguangqiang/CookieBar)
+A simple android library to show message on the screen.This library based on [CookieBar](https://github.com/liuguangqiang/CookieBar)
 ## Screenshot
 <img src="img/6gif.gif" width="35%"> 
 android 6.0
