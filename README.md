@@ -9,7 +9,7 @@ android 6.0  and 4.0
 
 ```
 dependencies {
-   compile 'com.mnock:msnackbar:0.0.1'
+   compile 'com.mnock:msnackbar:1.0.1'
 }
 ```
 
