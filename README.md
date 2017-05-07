@@ -1,5 +1,5 @@
 # MSnackbar
-A simple android library to show message on the screen.
+A simple android library to show message on the screen.This library based on [StarBar](https://github.com/liuguangqiang/CookieBar)
 ## Screenshot
 <img src="img/6gif.gif" width="30%"> 
 android 6.0
@@ -12,18 +12,22 @@ android 4.0
 
 ```
 dependencies {
-   	
+   	  compile 'com.mnock:msnackbar:0.0.1'
 }
 ```
 
 ### Maven
 ```
 <dependency>
-  
+  <groupId>com.mnock</groupId>
+  <artifactId>msnackbar</artifactId>
+  <version>0.0.1</version>
+  <type>pom</type>
 </dependency>
 ```
 
 ## A simple CookieBar.
+//修改4.0弹出位置错误 触摸收缩
 ```
  new MSnackBar.Builder(MainActivity.this)
                         .setTitle(R.string.cookie_title)
