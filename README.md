@@ -2,11 +2,8 @@
 A simple android library to show message on the screen.This library based on [CookieBar](https://github.com/liuguangqiang/CookieBar)
 ## Screenshot
 <img src="img/6gif.gif" width="35%"> 
-android 6.0
-<img src="img/6.jpg" width="35%">
-android 4.0
-<img src="img/4.png" width="35%">
-
+android 6.0  android 4.0
+<img src="img/6.jpg" width="30%"><img src="img/4.png" width="30%">
 ## Usage
 ### Gradle
 
