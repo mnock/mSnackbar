@@ -9,7 +9,7 @@ android 6.0  android 4.0
 
 ```
 dependencies {
-   	  compile 'com.mnock:msnackbar:0.0.1'
+   compile 'com.mnock:msnackbar:0.0.1'
 }
 ```
 
@@ -24,7 +24,7 @@ dependencies {
 ```
 
 ## MSnackBar
-//修改4.0弹出位置错误 触摸收缩
+//修改4.0弹出位置错误 滑动退出
 ```
  new MSnackBar.Builder(MainActivity.this)
                         .setTitle(R.string.cookie_title)
