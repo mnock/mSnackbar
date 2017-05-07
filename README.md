@@ -18,13 +18,12 @@ dependencies {
 <dependency>
   <groupId>com.mnock</groupId>
   <artifactId>msnackbar</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
 
 ## MSnackBar
-//修改4.0弹出位置错误 滑动退出
 ```
  new MSnackBar.Builder(MainActivity.this)
                         .setTitle(R.string.cookie_title)
