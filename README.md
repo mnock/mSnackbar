@@ -1,7 +1,7 @@
 # SnackbarDemo
 A simple android library to show message on the screen.
 ## Screenshot
-<img src="img/6.gif" width="30%"> 
+<img src="arts/img/6.gif" width="30%"> 
 android 6.0
 <img src="img/6.jpg" width="30%">
 android 4.0
