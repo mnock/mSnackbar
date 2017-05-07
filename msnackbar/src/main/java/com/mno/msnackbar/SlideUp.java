@@ -640,7 +640,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
                     }
                 } else {
                     this.slideAnimationTo = sliderView.getHeight();
-                    float slideAnimationFrom = -sliderView.getTranslationY();
+                    float slideAnimationFrom = sliderView.getTranslationY();
                     valueAnimator.setFloatValues(slideAnimationFrom, slideAnimationTo);
                     valueAnimator.start();
                 }
@@ -843,7 +843,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
 
                 if (moveTo < 0 && canSlide) {
                     notifyPercentChanged(percents);
-                    e("mno", " notifyPercentChanged", "onTouchStartToEnd--" + moveTo + "--" + sliderView.getWidth() + "---%" + percents);
+                    //e("mno", " notifyPercentChanged", "onTouchStartToEnd--" + moveTo + "--" + sliderView.getWidth() + "---%" + percents);
                     sliderView.setTranslationX(moveTo);
                 }
                 if (event.getRawX() < maxSlidePosition) {
@@ -932,7 +932,7 @@ public class SlideUp implements View.OnTouchListener, ValueAnimator.AnimatorUpda
                 if (moveTo < 0 && canSlide) {
                     notifyPercentChanged(percents);
                     sliderView.setTranslationY(moveTo);
-                    e("mno", " ACTION_MOVE", sliderView.getVisibility() + "--" + sliderView.getTranslationY() + "--" + currentState);
+                    //e("mno", " ACTION_MOVE", sliderView.getVisibility() + "--" + sliderView.getTranslationY() + "--" + currentState);
                 }
                 if (event.getRawY() < maxSlidePosition) {
                     maxSlidePosition = event.getRawY();

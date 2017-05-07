@@ -1,5 +1,16 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
+//添加
+publish {
+    artifactId = 'msnackbar'//模块名称
+    userOrg = rootProject.userOrg
+    groupId = rootProject.groupId
+    uploadName = 'msnackbar'//模块上传后所在的文件夹名称
+    publishVersion = '1.0.1'//模块版本号
+    desc = rootProject.description//模块的描述
+    website = rootProject.website //模块的网站
+    licences = rootProject.licences //模块的licences
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"

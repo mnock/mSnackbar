@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         .setLayoutGravity(Gravity.BOTTOM)
                         .setTitleSizeTextSize(14)
                         .setActionTextSize(12)
+                        .setDuration(2 * 1000)
                         .setActionColor(android.R.color.holo_red_light)
                         .setAction(R.string.cookie_action, new OnActionClickListener() {
                             @Override

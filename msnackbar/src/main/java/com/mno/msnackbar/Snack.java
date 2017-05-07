@@ -162,7 +162,7 @@ final class Snack extends LinearLayout {
                     .withListeners(new SlideUp.Listener() {
                         @Override
                         public void onSlide(float percent) {
-                            Log.e("mno", "" + percent);
+                            //Log.e("mno", "" + percent);
                             layoutCookie.setAlpha(1 - (percent / 100));
                         }
 

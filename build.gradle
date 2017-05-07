@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
-
+        classpath 'com.novoda:bintray-release:0.3.4'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -15,9 +15,29 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        flatDir{
+            dirs 'libs'
+        }
+        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/mnock/maven" }
     }
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+    }
+
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+def Version = "0.0.2"
+
+ext {
+    userOrg = "mnock"//bintray.com用户名
+    groupId = "com.mnock"//jcenter上的路径
+    desc = "This is a demo library to teach how to publish you own library to jcenter with android studio."//类库的描述，不重要
+    website = "https://github.com/mnock"//类库的网站，不重要
+    uploadName = "mbanner" //上传在bintray的文件夹
+    licences = ["Apache-2.0"]
 }
