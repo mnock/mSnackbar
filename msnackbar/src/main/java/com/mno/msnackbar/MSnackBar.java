@@ -68,7 +68,11 @@ public class MSnackBar {
             snackView.show();
         }
     }
-
+    public void hide() {
+        if (snackView != null&&isShowing()) {
+            snackView.dismiss();
+        }
+    }
     public static class Builder {
 
         private Params params = new Params();

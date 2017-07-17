@@ -207,7 +207,7 @@ final class Snack extends LinearLayout {
         super.onLayout(changed, l, t, r, b);
     }
 
-    private void dismiss() {
+    public void dismiss() {
         slideUp.hide();
     }
 
