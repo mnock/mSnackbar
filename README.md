@@ -9,7 +9,7 @@ android 6.0  4.0
 
 ```
 dependencies {
-   compile 'com.mnock:msnackbar:1.0.1'
+   compile 'com.mnock:msnackbar:1.0.2'
 }
 ```
 
@@ -18,7 +18,7 @@ dependencies {
 <dependency>
   <groupId>com.mnock</groupId>
   <artifactId>msnackbar</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
