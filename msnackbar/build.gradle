@@ -6,7 +6,7 @@ publish {
     userOrg = rootProject.userOrg
     groupId = rootProject.groupId
     uploadName = 'msnackbar'//模块上传后所在的文件夹名称
-    publishVersion = '1.0.2'//模块版本号
+    publishVersion = '1.0.3'//模块版本号
     desc = rootProject.description//模块的描述
     website = rootProject.website //模块的网站
     licences = rootProject.licences //模块的licences

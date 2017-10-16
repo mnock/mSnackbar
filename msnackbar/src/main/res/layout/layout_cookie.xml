@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fl_back"
+
     >
     <LinearLayout
         android:paddingBottom="16dp"
@@ -12,11 +12,11 @@
         android:background="@color/default_bg_color"
         android:layout_gravity="top"
         android:orientation="horizontal"
-        android:id="@+id/cookie"
+        android:id="@+id/ll_cookie_all"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <ImageView
-        android:id="@+id/iv_icon"
+        android:id="@+id/iv_cookieicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
@@ -29,7 +29,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tv_cookietitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -41,7 +41,7 @@
             android:visibility="gone" />
 
         <TextView
-            android:id="@+id/tv_message"
+            android:id="@+id/tv_cookiemessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/btn_action"
+        android:id="@+id/btn_cookieaction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"

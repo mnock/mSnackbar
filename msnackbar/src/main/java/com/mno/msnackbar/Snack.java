@@ -53,11 +53,11 @@ final class Snack extends LinearLayout {
 
     private void initViews(Context context) {
         inflate(getContext(), R.layout.layout_cookie, this);
-        layoutCookie = (LinearLayout) findViewById(R.id.cookie);
-        tvTitle = (TextView) findViewById(R.id.tv_title);
-        tvMessage = (TextView) findViewById(R.id.tv_message);
-        ivIcon = (ImageView) findViewById(R.id.iv_icon);
-        btnAction = (TextView) findViewById(R.id.btn_action);
+        layoutCookie = (LinearLayout) findViewById(R.id.ll_cookie_all);
+        tvTitle = (TextView) findViewById(R.id.tv_cookietitle);
+        tvMessage = (TextView) findViewById(R.id.tv_cookiemessage);
+        ivIcon = (ImageView) findViewById(R.id.iv_cookieicon);
+        btnAction = (TextView) findViewById(R.id.btn_cookieaction);
         initDefaultStyle(context);
     }
 
@@ -131,7 +131,8 @@ final class Snack extends LinearLayout {
                     @Override
                     public void onClick(View view) {
                         params.onActionClickListener.onClick();
-                        dismiss();
+                        if(params.needDismiss)
+                            dismiss();
                     }
                 });
 
@@ -218,7 +219,6 @@ final class Snack extends LinearLayout {
             public void run() {
                 ViewParent parent = getParent();
                 if (parent != null) {
-                    //fl_back.setReBack();
                     Snack.this.clearAnimation();
                     ((ViewGroup) parent).removeView(Snack.this);
                 }

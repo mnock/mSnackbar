@@ -156,7 +156,12 @@ public class MSnackBar {
             params.onActionClickListener = onActionClickListener;
             return this;
         }
-
+        public Builder setAction(String action, OnActionClickListener onActionClickListener,Boolean n) {
+            params.action = action;
+            params.onActionClickListener = onActionClickListener;
+            params.needDismiss=n;
+            return this;
+        }
         public Builder setAction(@StringRes int resId, OnActionClickListener onActionClickListener) {
             params.action = context.getString(resId);
             params.onActionClickListener = onActionClickListener;
@@ -215,6 +220,8 @@ public class MSnackBar {
         public int messageTextSize;
 
         public int actionTextSize;
+
+        public boolean needDismiss=true;
     }
 
 }
